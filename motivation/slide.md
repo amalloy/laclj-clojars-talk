@@ -27,6 +27,6 @@ end your program will look as if the language had been designed for it.
 
 * "Library" is just a blob of useful code
 * Clojure is perfect for this
-  * JVM has great distrubution tools
-  * Lisp has great abstraction tools
+    * JVM has great distrubution tools
+    * Lisp has great abstraction tools
 * Never copy-paste functions!

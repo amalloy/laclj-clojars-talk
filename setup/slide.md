@@ -1,10 +1,10 @@
 !SLIDE code
 # An example function
 
-(defn old-peoples-names [people]
-  (map #(select-keys % [:first-name :last-name])
-       (filter #(> (:age %) 80)
-               people)))
+    (defn old-peoples-names [people]
+      (map #(select-keys % [:first-name :last-name])
+           (filter #(> (:age %) 80)
+                   people)))
 
 !SLIDE code
 
