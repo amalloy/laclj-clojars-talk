@@ -10,7 +10,6 @@
     (ns my.awesome.project
       (:use [NAME.utils :only [records-matching]]))
 
-    ;; Much nicer, right?
     (defn old-peoples-names [people]
       (records-matching :age #(> % 80)
                         [:first-name :last-name]
