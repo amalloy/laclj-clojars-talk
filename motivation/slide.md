@@ -25,8 +25,8 @@ end your program will look as if the language had been designed for it.
 !SLIDE bullets
 # It's not that hard
 
-* "Library" is just a blob of useful code
-* Clojure is perfect for this
+  * "Library" is just a blob of useful code
+  * Clojure is perfect for this
     * JVM has great distrubution tools
     * Lisp has great abstraction tools
-* Never copy-paste functions!
+  * Never copy-paste functions!
