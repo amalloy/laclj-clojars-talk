@@ -3,9 +3,7 @@
 
 * Geni's open-source utilities
 * Use it, or fork it, if you want
-* Send pull requests if you want
-* We won't take most of them
-* Your utility library is *yours*
+* Send pull requests if you want, but we won't take most of them - your utility library is *yours*
 
 !SLIDE bullets
 # A tour
