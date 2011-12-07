@@ -49,7 +49,7 @@
       (def thread-num (thread-local
                        (swap! counter inc))))
     @thread-num ;; 1
-    @(future [@thread-num @thread-num]) ;; [2 2]
+    @(future @thread-num) ;; 2
     @thread-num ;; still 1
 
 !SLIDE code
@@ -61,9 +61,9 @@
     ;;  {"age" 26, "nick" "amalloy"}]
 
 !SLIDE code
-    (let [input-map {"x" 1.0, "y" 7.0}]
-      (into {}
-            (map (knit keyword int) input-map)))
+    (into {}
+          (map (knit keyword int)
+               {"x" 1.0, "y" 7.0}))
     ;; {:x 1, :y 7}
 
 !SLIDE code
