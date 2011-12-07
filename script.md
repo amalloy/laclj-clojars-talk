@@ -145,10 +145,10 @@ library.
 These days I don't use amalloy-utils - it has merged with Useful, Geni's
 open-source utility library. Justin helped me really polish several of the neat
 ideas I had put into amalloy-utils, and I helped him organize the huge blobby
-mess useful had become. You're welcome to use Useful, and send us pull requests
+mess Useful had become. You're welcome to use Useful, and send us pull requests
 if you want - a few people have. But the whole point is you don't have to - you
 can have your own library, and we've refused several pull requests because the
-functions added therein just don't interest us, useful as the might be. Nobody
+functions added therein just don't interest us, useful as they might be. Nobody
 will stop you from putting them in your own library, though!
 
 ## A tour
