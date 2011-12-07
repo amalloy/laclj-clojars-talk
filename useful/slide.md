@@ -48,11 +48,8 @@
 # fix
 
 (fix 3
-     string? keyword   ;; clause doesn't match: fall through
-     number? #(* 2 %)) ;; clause matches: return (* 2 x) = 6
-
-;; to-fix, given: "companion" functions
-;; note fix matches unified update model - can chain with alter, update-in, etc
+     string? keyword   ;; doesn't match: fall through
+     number? #(* 2 %)) ;; matches: return (* 2 x) = 6
 
 !SLIDE code
 # thread-local
@@ -68,8 +65,11 @@
 # keyed
 
 (let [age 26, nick "amalloy"]
-  [(keyed [age nick])          ;; {:age 26, :nick "amalloy"}
-   (keyed :strs [age nick])])  ;; {"age" 26, "nick" "amalloy"}
+  [(keyed [age nick])
+   (keyed :strs [age nick])])
+
+;; [{:age 26, :nick "amalloy"},
+;;  {"age" 26, "nick" "amalloy"}]
 
 !SLIDE code
 # knit
@@ -81,7 +81,9 @@
 !SLIDE code
 # update-each
 
-(let [m {:id "34", :max "105", :data {:foo :bar}}]
+(let [m {:id "34",
+         :max "105",
+         :data {:foo :bar}}]
   (update-each m [:id :max] read-string))
 
 ;; {:id 34, :max 105, :data {:foo :bar}}

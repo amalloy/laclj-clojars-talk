@@ -2,20 +2,22 @@
 # An example function
 
     (defn old-peoples-names [people]
-      (map #(select-keys % [:first-name :last-name])
+      (map #(select-keys % [:first :last])
            (filter #(> (:age %) 80)
                    people)))
 
 !SLIDE code
 
-(defn records-matching [key-field pred goal-keys coll]
+(defn records-matching
+  [key-field pred goal-keys coll]
   (->> coll
        (filter #(pred (get % key-field)))
        (map #(select-keys % goal-keys))))
 
 ;; OR ;;
 
-(defn records-matching [key-field pred goal-keys coll]
+(defn records-matching
+  [key-field pred goal-keys coll]
   (for [m coll
         :let [key-val (get m key-field)]
         :when (pred key-val)]
