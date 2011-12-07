@@ -14,8 +14,6 @@
            (filter #(pred (get % key-field)))
            (map #(select-keys % goal-keys))))
 
-    ;; OR ;;
-
     (defn records-matching
       [key-field pred goal-keys coll]
       (for [m coll
