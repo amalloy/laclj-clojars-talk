@@ -9,7 +9,7 @@
 * Recognize and capture patterns
 * Personalized language
 
-!SLIDE smaller
+!SLIDE
 # Paul Graham loves utilities
 
 In Lisp, you don’t just write your program down toward the language, you also
